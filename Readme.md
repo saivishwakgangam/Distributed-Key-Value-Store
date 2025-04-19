@@ -9,7 +9,7 @@
 - Basic Fault Tolerance
 - Simple Replication Monitoring and replication happens in sync manner rather than async.
 
-
+```mermaid
 graph TD
     Client[Client] --> Leader[LeaderNode]
     Leader --> Follower1[FollowerNode 1]
@@ -17,6 +17,7 @@ graph TD
     Leader --> KVStore[KeyValueStore Singleton]
     Follower1 --> KVStore
     Follower2 --> KVStore
+```
 
 
 
