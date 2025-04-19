@@ -11,12 +11,11 @@
 
 ```mermaid
 graph TD
-    Client[Client] --> Leader[LeaderNode]
-    Leader --> Follower1[FollowerNode 1]
-    Leader --> Follower2[FollowerNode 2]
-    Leader --> KVStore[KeyValueStore Singleton]
-    Follower1 --> KVStore
-    Follower2 --> KVStore
+Client[Client] --> Leader[LeaderNode]
+Leader --> Follower1[FollowerNode 1]
+Leader --> Follower2[FollowerNode 2]
+Follower1 --> KVStore1[KeyValueStore 1]
+Follower2 --> KVStore2[KeyValueStore 2]
 ```
 
 
